@@ -1,8 +1,6 @@
-let nms= [1,2,3,4,5,6,7,8,9];
-let soma= 0;
-
-nms.forEach((n)=>{
-    soma+=n;
+let numeros= [3, 6, 9, 12]
+numeros.forEach(function(n){
+    n= n*2;
+    console.log(n)
     
 });
-console.log(soma);
