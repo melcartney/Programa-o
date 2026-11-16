@@ -12,3 +12,5 @@ numeros.forEach (function(n){
 })
 console.log (impares)
 console.log(pares)
+
+/*lalalalalalalala estou enlouquecendo lalalala */
