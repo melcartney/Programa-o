@@ -1,6 +1,3 @@
-let porcento;
-
-let precoreajustado;
 
 let precos = [50, 80, 120, 200];
 
@@ -8,16 +5,17 @@ function reajustarPrecos(valores, percentual) {
   let novosPrecos = [];
 
   for (let i = 0; i < valores.length; i++) {
-    porcento = (valores[i] * percentual) / 100;
-
-    novosPrecos[i].push(valores[i] + porcento);
-
-    return novosPrecos;
+    novosPrecos.push(valores[i] * (1 + percentual / 100));
   }
+
+  return novosPrecos;
 }
 
 let reajustados = reajustarPrecos(precos, 8);
+
+console.log(precos);
 console.log(reajustados);
+
 
 /*Função para aplicar reajuste em preços
 Crie uma função chamada reajustarPrecos que receba um array de preços e um percentual
